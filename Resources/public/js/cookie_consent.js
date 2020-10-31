@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 xhr.open('POST', cookieConsentForm.action);
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 xhr.send(serializeForm(cookieConsentForm, event.target));
-                document.getElementsByTagName("body")[0].style = null;
+                document.body.style.marginBottom = null;
             }, false);
         });
     }
